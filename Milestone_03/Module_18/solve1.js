@@ -1,24 +1,25 @@
-// Leap Year Check ....
+// Calculate odd number avereage array [] ....
 
-function isLeapYear(year){
+function oddAverage(nums) {
+  const odds = [];
 
-    if( year % 400 ==0 || (year % 100 !== 0  &&  year % 4 == 0)){
-        
-        return 'Leap Year' ;
+  // 1st loop kore odd number gulo push korse..
+  for (const num of nums) {
+    if (num % 2 === 1) {
+      odds.push(num);
     }
-    else{
-        return 'No' ;
-    }
+  }
+
+  // 2nd a odds ke sum & length kore avg find
+  let sum = 0;
+  for (const number of odds) {
+    sum += number;
+  }
+  const count = odds.length;
+  const avg = sum / count;
+  console.log(odds);
+  return avg;
 }
 
-console.log(isLeapYear(2000));
-
-
-
-
-
-
-
-
-
-
+const nums = [2, 33, 5, 77, 32, 8, 11, 53, 2, 34, 99];
+console.log(oddAverage(nums));
