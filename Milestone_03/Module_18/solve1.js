@@ -1,25 +1,15 @@
-// Calculate odd number avereage array [] ....
+// Duplicate Remove array [] ....
 
-function oddAverage(nums) {
-  const odds = [];
-
-  // 1st loop kore odd number gulo push korse..
-  for (const num of nums) {
-    if (num % 2 === 1) {
-      odds.push(num);
+function dupicateArray(nums){
+    const unique = [];
+    for(const num of nums){
+        if(unique.includes(num) == false){
+            unique.push(num);
+        }
     }
-  }
+    return unique ;
 
-  // 2nd a odds ke sum & length kore avg find
-  let sum = 0;
-  for (const number of odds) {
-    sum += number;
-  }
-  const count = odds.length;
-  const avg = sum / count;
-  console.log(odds);
-  return avg;
 }
 
-const nums = [2, 33, 5, 77, 32, 8, 11, 53, 2, 34, 99];
-console.log(oddAverage(nums));
+const nums = [1,22,22,34,5,34,5,67,9,90,100];
+console.log(dupicateArray(nums));
