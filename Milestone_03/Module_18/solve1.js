@@ -1,14 +1,18 @@
-// 12 inche =  1 feet ....
+// Leap Year Check ....
 
-function inchToFeet(inch){
-    const feet = parseInt(inch / 12 );
-    const inche = inch % 12 ;
-    const  result = feet + ' ft ' + inche + ' inch';
-    return result ;
+function isLeapYear(year){
+
+    if( year % 400 ==0 || (year % 100 !== 0  &&  year % 4 == 0)){
+        
+        return 'Leap Year' ;
+    }
+    else{
+        return 'No' ;
+    }
 }
 
-const myHeight = inchToFeet(80);
-console.log(myHeight);
+console.log(isLeapYear(2000));
+
 
 
 
