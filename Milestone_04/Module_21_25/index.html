@@ -1,36 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
     <!-- Tailwind css cdn code  -->
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-      <!-- Google fonts  -->
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
-
-
-<!-- Font awesome icon cdn code 
+    <!-- Font awesome icon cdn code 
   -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<style>
-    *{
-         font-family: "Manrope", sans-serif;
-    }
-</style>
+    <style>
+      * {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Banner section here  -->
 
-</head>
-<body>
-    <div>
-        <h2 class="text-red-500 bg-green-500">Tea House</h2>
-        <span>
-            <i class="fa-regular fa-house"></i>
-        </span>
-    </div>
-</body>
+    <section class="grid grid-col-1 md:grid-cols-2 container mx-auto">
+      <!-- Banner left here  -->
+      <div class="banner-left space-y-7">
+        <h2 class="text-[80px] font-bold">
+          It's good <br />
+          tea time at The <br />
+          Tea House
+        </h2>
+        <p class="text-[#777777]">
+          Tea and Botanical Solutions Supplier Give Optimum <br />
+          Satisfaction To Your Taste Buds.
+        </p>
+        <button
+          class="py-3 px-4 rounded-md text-white bg-red-500 bg-linear-65 from-[#FF8938] to-[#FF0000]"
+        >
+          Explore More
+          <span class="-rotate-45 inline-block"
+            ><i class="fa-solid fa-arrow-right"></i
+          ></span>
+        </button>
+      </div>
+      <!-- Banner right here  -->
+      <div class="banner-right flex justify-end items-end relative">
+        <img src="/images/banner.png" alt="" />
+        <div
+          class="bg-white rounded-xl shadow-2xl flex justify-center items-center w-52 absolute py-2.5 px-3 bottom-3 left-56 gap-2.5"
+        >
+          <img src="/images/Ratting.png" alt="" />
+          <div>
+            <h2 class="font-bold text-2xl">5.00</h2>
+            <p>Trust Rating</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
