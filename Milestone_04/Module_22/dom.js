@@ -7,7 +7,7 @@ console.log('Dom Connected');
 // console.log(liCollection.innerText);
 // liCollection.innerText = "Perfect to work Dom";
 // console.log(liCollection.innerText)
-const collectionh2 =document.getElementsByClassName('wp_skill');
+const collectionh2 =document.querySelectorAll('#skill li')
  console.log(collectionh2);
 for(const element of collectionh2){
     console.log(element.innerText);
