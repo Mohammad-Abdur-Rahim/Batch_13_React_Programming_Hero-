@@ -5,3 +5,10 @@
 .head {
     background:red;
 }
+
+.skill {
+    color: rgb(238, 236, 236);
+    font-size: 40px;
+    background-color: chocolate;
+    padding: 20px;
+}

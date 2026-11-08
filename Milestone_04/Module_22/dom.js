@@ -12,3 +12,15 @@ const collectionh2 =document.querySelectorAll('#skill li')
 for(const element of collectionh2){
     console.log(element.innerText);
 }
+
+
+
+
+// create new  element
+const newChild =document.createElement('li');
+
+newChild.innerText ='Inner text work perfectly 1st setp done now append this value';
+
+
+const newAdd = document.getElementById('newappend');
+newAdd.append(newChild);
