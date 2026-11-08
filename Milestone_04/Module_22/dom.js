@@ -1,26 +1,26 @@
-console.log('Dom Connected');
 
-// Dom Value Find and loop . 1 collect tag name 2. loop tag value
-// const liCollection = document.getElementsByClassName('skill');
-// console.log(liCollection);
-// const liCollection = document.getElementById('skill');
-// console.log(liCollection.innerText);
-// liCollection.innerText = "Perfect to work Dom";
-// console.log(liCollection.innerText)
-const collectionh2 =document.querySelectorAll('#skill li')
- console.log(collectionh2);
-for(const element of collectionh2){
-    console.log(element.innerText);
-}
+// 01 parent Node Where i Add.....
+const mainContainer =document.getElementById('main-container');
+
+// 02 Create Element new..  section
+const newElementAdd = document.createElement('section');
+//create h1
+const h1 = document.createElement('h1');
+h1.innerText = 'Wordpress To React Developer Work Life Balance';
+newElementAdd.appendChild(h1);
 
 
 
 
-// create new  element
-const newChild =document.createElement('li');
+const ul = document.createElement('ul');
+const li1 = document.createElement('li');
+li1.innerText = 'Wordpress to React';
+ ul.appendChild(li1);
+ newElementAdd.appendChild(ul);
 
-newChild.innerText ='Inner text work perfectly 1st setp done now append this value';
 
 
-const newAdd = document.getElementById('newappend');
-newAdd.append(newChild);
+
+
+// 03 Append here just ..............
+mainContainer.appendChild(newElementAdd);
