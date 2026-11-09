@@ -9,7 +9,6 @@
 //   showName.innerText = name;
 // });
 
-
 // more event just replace the "click" = mouseenter,mousemove,mouseout,focus,blur
 
 // document.getElementById('more-btn')
@@ -17,24 +16,21 @@
 //   console.log('working');
 // });
 
-// // keydown , keypress , keyup 
+// // keydown , keypress , keyup
 // document.getElementById('input-value')
 // .addEventListener('keyup',function(e){
 //   console.log('typing',e.target.value);
 // });
 
+const delete_Btn = document.getElementById("delete-btn");
+document.getElementById("input-field").addEventListener("keyup", function (e) {
+  console.log("type :", e.target.value);
 
-const delete_Btn = document.getElementById('delete-btn');
-document.getElementById('input-field')
-.addEventListener('keyup',function(e){
-  console.log('type :',e.target.value);
+  const eValueInput = e.target.value;
 
-const eValueInput = e.target.value;
-
-if(eValueInput === 'Remove Repo'){
-  delete_Btn.disabled = false ;
-}else{
-  delete_Btn.disabled = true ;
-}
-
+  if (eValueInput === "Remove") {
+    delete_Btn.disabled = false;
+  } else {
+    delete_Btn.disabled = true;
+  }
 });
