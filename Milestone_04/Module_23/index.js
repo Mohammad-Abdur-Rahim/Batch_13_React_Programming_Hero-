@@ -24,7 +24,7 @@
 // });
 
 
-
+const delete_Btn = document.getElementById('delete-btn');
 document.getElementById('input-field')
 .addEventListener('keyup',function(e){
   console.log('type :',e.target.value);
@@ -32,8 +32,9 @@ document.getElementById('input-field')
 const eValueInput = e.target.value;
 
 if(eValueInput === 'Remove Repo'){
-  const delete_Btn = document.getElementById('delete-btn');
-  delete_Btn.removeAttribute('disabled');
+  delete_Btn.disabled = false ;
+}else{
+  delete_Btn.disabled = true ;
 }
 
 });
