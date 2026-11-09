@@ -21,3 +21,12 @@ document
   .addEventListener("click", function makeGreen() {
     document.body.style.backgroundColor = "green";
   });
+
+
+    // 5 option 1. addevent add korae hoice and 2. ar sataha onno title id dore id value change koare hoice ......
+    document.getElementById('title-btn-update')
+    .addEventListener('click',function(){
+        // console.log('ok');
+        const changeTitle = document.getElementById('wp-title');
+        changeTitle.innerText='React + Worpress Both Developer'
+    })
