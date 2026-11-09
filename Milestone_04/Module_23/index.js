@@ -8,3 +8,17 @@ document.getElementById("update-btn").addEventListener("click", function () {
   const showName = document.getElementById("user-name");
   showName.innerText = name;
 });
+
+
+// more event just replace the "click" = mouseenter,mousemove,mouseout,focus,blur
+
+document.getElementById('more-btn')
+.addEventListener("mousemove",function(){
+  console.log('working');
+});
+
+
+
+
+
+
