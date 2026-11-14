@@ -10,7 +10,20 @@ function getElementText(id) {
   return document.getElementById(id);
 }
 //03 Set Balance Fn
-function setBalance(value){
-const update_Balanace = document.getElementById('balance');
-update_Balanace.innerText =value;
+function setBalance(value) {
+  const update_Balanace = document.getElementById("balance");
+  update_Balanace.innerText = value;
+}
+
+//04.  6 Button section Show Function
+
+function showOnly(id) {
+  const addMoney = document.getElementById("addMoney");
+  const cashOut = document.getElementById("cashout");
+
+  addMoney.classList.add("hidden");
+  cashOut.classList.add("hidden");
+
+  const selected = document.getElementById(id);
+  selected.classList.remove("hidden");
 }
