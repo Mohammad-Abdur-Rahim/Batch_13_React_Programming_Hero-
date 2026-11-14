@@ -39,18 +39,39 @@
 
 //__________________ Use Common Function _________________
 
+document.getElementById("withdraw-btn").addEventListener("click", function () {
+  // 01 get Agent Num
+  const agent_Number = getElementValue("agent_Num");
+  console.log(agent_Number);
+  if (agent_Number.length != 11) {
+    alert("Invalid Number");
+    return;
+  }
+  // 02 get Withdraw Amount
+  const withdraw_Amount = getElementValue("withdraw_Amount");
+  console.log(withdraw_Amount);
 
-document.getElementById("withdraw-btn").addEventListener('click',function(){
- // 01 get Agent Num
-const agent_Number = getElementValue('agent_Num');
-console.log(agent_Number);
-// 02 get Withdraw Amount
-const withdraw_Amount = getElementValue('withdraw_Amount');
-console.log(withdraw_Amount);
- // 03 get  Current Balance
- const current_Balance = getElementText('balance');
-console.log(current_Balance);
- // 04 get Pin Number
- const withdraw_Pin = getElementValue('withdraw_Pin');
-console.log(withdraw_Pin);
+  // 03 get  Current Balance
+  const current_Balance = getElementText("balance");
+  console.log(current_Balance);
+
+  const remain_Balance =
+    Number(current_Balance.innerText) - Number(withdraw_Amount);
+  if (remain_Balance <= 0) {
+    alert("Insufficiant Balance");
+    return;
+  }
+  console.log(remain_Balance);
+
+  // 04 get Pin Number
+  const withdraw_Pin = getElementValue("withdraw_Pin");
+  if (withdraw_Pin === "2580") {
+    alert("Withdraw Successfully");
+    console.log("Balance:", remain_Balance);
+    current_Balance.innerText = remain_Balance;
+  } else {
+    alert(" Invalid Pin");
+    return;
+  }
+  console.log("Pin", withdraw_Pin);
 });
