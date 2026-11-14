@@ -53,10 +53,9 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
 
   // 03 get  Current Balance
   const current_Balance = getElementText("balance");
-  console.log(current_Balance);
+  // console.log(current_Balance);
 
-  const remain_Balance =
-    Number(current_Balance.innerText) - Number(withdraw_Amount);
+  const remain_Balance = Number(current_Balance.innerText) - Number(withdraw_Amount);
   if (remain_Balance <= 0) {
     alert("Insufficiant Balance");
     return;
@@ -68,7 +67,7 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
   if (withdraw_Pin === "2580") {
     alert("Withdraw Successfully");
     console.log("Balance:", remain_Balance);
-    current_Balance.innerText = remain_Balance;
+    setBalance(remain_Balance);
   } else {
     alert(" Invalid Pin");
     return;
