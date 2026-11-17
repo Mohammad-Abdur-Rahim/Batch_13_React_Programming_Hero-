@@ -68,6 +68,25 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
     alert("Withdraw Successfully");
     console.log("Balance:", remain_Balance);
     setBalance(remain_Balance);
+
+
+
+    // 01 History conatier Anbo add hole
+    const history = document.getElementById("history_content");
+    // 02 div create
+    const newHistory = document.createElement("div");
+    // 03 innertext set
+    newHistory.innerHTML = `
+
+    <div class="transaction_card shadow mb-2 p-5 rounded-xl border border-stone-300 bg-white">
+    CashOut money ${withdraw_Amount} Tk . success form ${agent_Number} Agent Number at ${new Date()}
+          </div>
+
+    `;
+    // ay div append korbo history te ...
+    history.append(newHistory);
+
+
   } else {
     alert(" Invalid Pin");
     return;
