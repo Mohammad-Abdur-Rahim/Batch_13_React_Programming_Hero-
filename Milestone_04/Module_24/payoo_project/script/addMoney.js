@@ -39,7 +39,7 @@ document.getElementById("add_money_btn").addEventListener("click", function () {
     newHistory.innerHTML = `
 
     <div class="transaction_card shadow mb-2 p-5 rounded-xl border border-stone-300 bg-white">
-    add money success form accont number <span class='font-bold'> ${accountNumber}</span> at ${new Date()}
+    add money success form accont number <span class='font-bold text-2xl'> ${accountNumber}</span> at ${new Date()}
           </div>
 
     `;

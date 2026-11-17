@@ -55,7 +55,8 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
   const current_Balance = getElementText("balance");
   // console.log(current_Balance);
 
-  const remain_Balance = Number(current_Balance.innerText) - Number(withdraw_Amount);
+  const remain_Balance =
+    Number(current_Balance.innerText) - Number(withdraw_Amount);
   if (remain_Balance <= 0) {
     alert("Insufficiant Balance");
     return;
@@ -69,9 +70,7 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
     console.log("Balance:", remain_Balance);
     setBalance(remain_Balance);
 
-
-
-    // 01 History conatier Anbo add hole
+    // 01 History Transaction conatier Anse
     const history = document.getElementById("history_content");
     // 02 div create
     const newHistory = document.createElement("div");
@@ -79,14 +78,12 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
     newHistory.innerHTML = `
 
     <div class="transaction_card shadow mb-2 p-5 rounded-xl border border-stone-300 bg-white">
-    CashOut money ${withdraw_Amount} Tk . success form ${agent_Number} Agent Number at ${new Date()}
+    CashOut money <span class='font-bold'> ${withdraw_Amount} Tk  </span>. success form ${agent_Number} Agent Number at ${new Date()}
           </div>
 
     `;
     // ay div append korbo history te ...
     history.append(newHistory);
-
-
   } else {
     alert(" Invalid Pin");
     return;
