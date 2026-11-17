@@ -1,0 +1,1 @@
+console.log('ES6 Module working');
