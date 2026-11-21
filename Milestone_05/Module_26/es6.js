@@ -1,11 +1,8 @@
-function add(n1, n2) {
-  const sum = n1 + n2;
-  return sum;
-}
-const result = add(20, 80);
-console.log(`sum of total result ${result} `);
+const max = Math.max(2,1,4,5,8,6,55);
+console.log(max);
 
-//Arrow fn basic
-const add2 = (n1, n2) => n1 + n2;  //single line a no need return
-const result2 = add2(44, 68);
-console.log("Basic Arrow Fn Sum :", result2);
+
+//Spread Operator ...
+const number = [10,22,5,6,1,5,1,55,556]
+const max2 = Math.max(...number);
+console.log(max2);
