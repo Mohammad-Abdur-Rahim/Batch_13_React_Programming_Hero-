@@ -15,3 +15,6 @@ console.log(values);
 
 // key and value both display ......
 console.log(entires);
+
+Object.freeze(product);    // stop all add, delete, modify
+Object.seal(product);    // stop all only modify
