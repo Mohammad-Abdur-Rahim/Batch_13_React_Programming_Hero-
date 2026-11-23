@@ -1,14 +1,6 @@
-//Primitive = value changeable
-let data = 4;
-data = "Md";
-data = true;
+// Null and undefine .........
 
-console.log(typeof data);
-
-
-//non-primitive = value unchangeable  ref use  -----------------
-let person =[1,22,5];
-let person2 ={salary : 80000};
-
-console.log(typeof person);
-console.log(typeof person2);
+const sum = (a,b)=>{
+    console.log(a,b);
+}
+sum(2);   // value not input = undefine
