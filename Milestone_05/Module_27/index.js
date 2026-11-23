@@ -1,18 +1,5 @@
-//  undefine .........
-
-const sum = (a,b)=>{
-    console.log(a,b);
+// truthy and Falsy  concept
+let price = 0;
+if(!price){
+    console.log('price is Falsy');
 }
-sum(2);   // value not input = undefine
-
-// undefine = value nai  / Null = pore value debo
-const person ={
-    firstName : 'Md Abdur Rahim',
-    age : 25,
-    salary:28000,
-    married : false,
-    studyAbroad : Null,
-};
-
-console.log(person['hello']);
-console.log(person['studyAbroad']);
