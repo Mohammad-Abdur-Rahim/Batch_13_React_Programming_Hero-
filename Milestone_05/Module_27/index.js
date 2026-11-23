@@ -1,5 +1,5 @@
-// truthy and Falsy  concept
-let price = 0;
-if(!price){
-    console.log('price is Falsy');
-}
+// Double == & Triple === conversion ..........important things
+
+console.log(2===2);
+console.log(2==='2');
+console.log(2===3);
