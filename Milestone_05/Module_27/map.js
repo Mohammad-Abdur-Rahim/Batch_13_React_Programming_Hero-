@@ -28,3 +28,14 @@ const updatedPrices = prices.map((price) => {
 });
 
 console.log("Updated Prices:", updatedPrices);
+
+
+const values = [10, 20, 30];
+
+const result = values.map((num, index, array) => {
+    console.log(num);
+    console.log(index);
+    console.log(array);
+
+    return num * 2;
+});
