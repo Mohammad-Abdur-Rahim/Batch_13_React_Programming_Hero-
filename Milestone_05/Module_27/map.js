@@ -39,3 +39,13 @@ const result = values.map((num, index, array) => {
 
     return num * 2;
 });
+
+// Filter Fn ()
+
+const marks = [30, 80, 45, 90, 55, 20];
+
+const passed = marks.filter((mark) => {
+    return mark >= 50;
+});
+
+console.log(passed);
