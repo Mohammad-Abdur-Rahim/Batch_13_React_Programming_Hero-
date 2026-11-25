@@ -49,3 +49,17 @@ const passed = marks.filter((mark) => {
 });
 
 console.log(passed);
+
+//Find () function
+
+const users = [
+    { id: 1, name: "Rahim", age: 20 },
+    { id: 2, name: "Karim", age: 25 },
+    { id: 3, name: "Hasan", age: 30 }
+];
+
+const user = users.find((person) => {
+    return person.id === 2;
+});
+
+console.log(user);
