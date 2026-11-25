@@ -1,0 +1,3 @@
+// Map Fn loop kore value dei ....
+
+const num = [11,51,54,5,68,99,100];
